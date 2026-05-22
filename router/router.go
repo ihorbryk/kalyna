@@ -28,9 +28,8 @@ func New(routes ...*Route) Routes {
 	return routes
 }
 
-func (r Routes) Add(route *Route) Routes {
-	r = append(r, route)
-	return r
+func (r Routes) Append(routes ...*Route) Routes {
+	return append(r, routes...)
 }
 
 func (r Routes) AddGroup(pathPrefix string, routes Routes) Routes {

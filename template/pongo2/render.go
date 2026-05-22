@@ -9,7 +9,10 @@ import (
 type Renderer struct{}
 
 func (pr *Renderer) Render(filePath string, context map[string]any) (string, error) {
-	tmpl := pongo2.Must(pongo2.FromFile(filePath))
+	tmpl, err := pongo2.FromCache(filePath)
+	if err != nil {
+		return "", err
+	}
 
 	pongonContext := pongo2.Context{}
 	maps.Copy(pongonContext, context)

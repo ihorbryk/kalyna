@@ -3,6 +3,7 @@
 [*] Base App setup
     [*] Implement settings to have way to configure app
     [*] Implement start server
+    [*] Included apps support
 
 [*] Base routing.
     [*] Implement Request and Response on framework level.
@@ -18,7 +19,7 @@
 
 [] Console manager
     [] Bootstrap project
-    [] Bootstrap app
+    [*] Bootstrap app
     [] Bootstrap ctrl
     [] Bootstrap model
 
@@ -28,3 +29,8 @@
 [] Base DB Models
     [] ...
 
+[] Base forms
+    [] ...
+
+[] Auth app
+    [] ...
